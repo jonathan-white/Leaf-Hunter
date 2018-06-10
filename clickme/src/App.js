@@ -111,7 +111,7 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="navbar App-header">
-          <a href="/Leaf-Hunter">
+          <a href="/Leaf-Hunter/">
             <div className="App-logo-title">
               <img src={logo} alt="logo" className="App-logo" />
               <h1 className="App-title">Leaf Hunter</h1>
@@ -139,7 +139,7 @@ class App extends Component {
           </div>
         </div>
         <footer className="App-footer">
-          <a href="/Leaf-Hunter">
+          <a href="/Leaf-Hunter/">
             <div className="App-logo-title">
               <img src={logo} alt="logo" className="App-logo" />
               <h1 className="App-title">Leaf Hunter</h1>
