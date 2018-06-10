@@ -46,7 +46,7 @@
 
 .App-intro-bg {
   position: absolute;
-  background-image: url(./leaves-3.jpg);
+  background-image: url(./leaves.jpg);
   height: 100%;
   width: 200%;
   animation: App-intro-marquee infinite 50s linear;

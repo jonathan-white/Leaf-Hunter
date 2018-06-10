@@ -14,6 +14,10 @@ class App extends Component {
   };
 
   handleIncrement = () => {
+    if(this.state.score === 11){
+      this.winGame();
+    }
+
     if (this.state.score >= this.state.highScore) {
       this.setState({ 
         score: this.state.score + 1,
@@ -29,9 +33,14 @@ class App extends Component {
     this.setState({
       clicked: [],
       score: 0,
-      images: this.shuffleImages(this.state.images)
+      images: this.shuffleImages(this.state.images),
     });
   };
+
+  winGame = () => {
+    // DIsplay celebration once the game has been won!
+    alert('You win!!!');
+  };  
 
   correctGuess = () => {
     this.setState({
@@ -54,6 +63,8 @@ class App extends Component {
       this.resetGame();
       return;
     } else {
+      // Increment the score and highScore
+      this.handleIncrement();
       this.correctGuess();
     }
 
@@ -63,8 +74,6 @@ class App extends Component {
       images: this.shuffleImages(this.state.images)
     });
 
-    // Increment the score and highScore
-    this.handleIncrement();
   };
 
   // Shuffle image array
@@ -85,12 +94,16 @@ class App extends Component {
 
   render() {
     const guessedCorrectly = this.state.correctChoice;
-    
+
     let status;
+    let highlight = 'white';
+    let shake = "";
     if(guessedCorrectly) {
       status = "You guessed correctly!";
     } else if (guessedCorrectly === false) {
       status = "You guessed incorrectly!";
+      highlight = 'danger';
+      shake = "shake";
     } else {
       status = "Click a leaf below";
     }
@@ -104,7 +117,7 @@ class App extends Component {
               <h1 className="App-title">Leaf Hunter</h1>
             </div>
           </a>
-          <h4>{status}</h4>
+          <h4 className={`status text-${highlight}`}>{status}</h4>
           <h4>Score: {this.state.score} | Highest Score: {this.state.highScore}</h4>
         </nav>
         <header className="App-intro">
@@ -113,10 +126,11 @@ class App extends Component {
           <i className="fas fa-window-close close" onClick={this.closeIntro}></i>
         </header>
         <div className="container">
-          <div className="wrapper row">
+          <div className={`wrapper row ${shake}`}>
           {this.shuffleImages(this.state.images).map(image => (
             <ImageCard 
               id={image.id}
+              name={image.name}
               source={image.src} 
               key={image.id} 
               handleClick={this.handleClick}
