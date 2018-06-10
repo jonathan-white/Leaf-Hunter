@@ -16,13 +16,15 @@ body {
 }
 
 .container {
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 150px;
+	padding-left: 150px;
+	margin: 0 auto;
 }
 
 .wrapper {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .leaf {
@@ -30,8 +32,10 @@ body {
 	margin: 5px;
 	border: 1px solid #000;
 	box-shadow: 2px 2px 5px rgba(0,0,0, .7);
-	margin: 15px 25px;
+	margin: 5px 25px;
 	cursor: pointer;
+	min-width: 155px;
+	min-height: 155px;
 }
 
 .leaf:hover {
@@ -41,8 +45,8 @@ body {
 }
 
 .leaf img {
-	width: 170px;
-	height: 170px;
+	width: 150px;
+	height: 150px;
 }
 
 .close {
@@ -51,3 +55,11 @@ body {
 	right: 10px;
 	z-index: 1;
 }
+
+/*@media screen and (max-width: 1100px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin: 0 auto;
+	}
+}*/

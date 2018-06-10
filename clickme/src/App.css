@@ -2,13 +2,20 @@
   text-align: center;
 }
 
+.App-logo-title {
+  display: flex;
+  position: relative;
+}
+
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 36px;
+  margin-right: 5px;
+  position: relative;
+  top: -5px;
+  left: -5px;
 }
 
 .App-header {
-  background-color: #222;
   background-color: rgba(0, 194, 0, 1);
   padding: 20px;
   color: white;
@@ -16,9 +23,11 @@
   opacity: .8;
 }
 
-.App-header a {
+.App-header a,
+.App-footer a {
   color: #fff;
   text-decoration: none;
+  line-height: 2rem;
 }
 
 .App-title {
@@ -26,13 +35,47 @@
 }
 
 .App-intro {
+  position: relative;
   font-size: large;
   margin-top: 76px;
   opacity: .6;
-  position: relative;
+  height: 155px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.App-intro-bg {
+  position: absolute;
+  background-image: url(./leaves-3.jpg);
+  height: 100%;
+  width: 200%;
+  animation: App-intro-marquee infinite 50s linear;
+}
+
+.App-intro p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 194, 0, 1);
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes App-intro-marquee {
+  from { transform: translate(0,0); }
+  to { transform: translate(-46.2%,0); }
 }

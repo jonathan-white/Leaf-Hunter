@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './Leaf_icon_15.svg';
 import './App.css';
 import ImageCard from './components/ImageCard/ImageCard';
 import images from './images.json';
@@ -10,6 +10,7 @@ class App extends Component {
     clicked: [],
     score: 0,
     highScore: 0,
+    correctChoice: null
   };
 
   handleIncrement = () => {
@@ -23,6 +24,7 @@ class App extends Component {
     }
   };
 
+  // reset the clicked array, score and shuffle images
   resetGame = () => {
     this.setState({
       clicked: [],
@@ -31,20 +33,41 @@ class App extends Component {
     });
   };
 
+  correctGuess = () => {
+    this.setState({
+      correctChoice: true,
+    });
+  };
+
+  incorrectGuess = () => {
+    this.setState({
+      correctChoice: false,
+    });
+  };
+
   handleClick = i => {
     const clickedItems = this.state.clicked;
+
+    // If the player has already clicked the image reset the game
     if(clickedItems.includes(i)) {
+      this.incorrectGuess();
       this.resetGame();
       return;
+    } else {
+      this.correctGuess();
     }
+
+    // record the index of the clicked image and reshuffle images
     this.setState({ 
       clicked: [...clickedItems, i],
       images: this.shuffleImages(this.state.images)
     });
+
+    // Increment the score and highScore
     this.handleIncrement();
-    // console.log(this.state.clicked);
   };
 
+  // Shuffle image array
   shuffleImages = arr => (
     arr
       .map(a => [Math.random(), a])
@@ -58,18 +81,35 @@ class App extends Component {
     intro.style.marginTop = '0';
     intro.style.padding = '38px';
     intro.style.opacity = '0';
-  }
+  };
 
   render() {
+    const guessedCorrectly = this.state.correctChoice;
+    
+    let status;
+    if(guessedCorrectly) {
+      status = "You guessed correctly!";
+    } else if (guessedCorrectly === false) {
+      status = "You guessed incorrectly!";
+    } else {
+      status = "Click a leaf below";
+    }
+
     return (
       <div className="App">
         <nav className="navbar App-header">
-          <a href="/"><h1 className="App-title">Leaf Hunter</h1></a>
-          <h4>Click a leaf below</h4>
+          <a href="/">
+            <div className="App-logo-title">
+              <img src={logo} alt="logo" className="App-logo" />
+              <h1 className="App-title">Leaf Hunter</h1>
+            </div>
+          </a>
+          <h4>{status}</h4>
           <h4>Score: {this.state.score} | Highest Score: {this.state.highScore}</h4>
         </nav>
-        <header className="jumbotron App-intro">
-          <p>To get started, click a leaf below.</p>
+        <header className="App-intro">
+          <div className="App-intro-bg"></div>
+          <p>Click on a leaf to earn points, but don't click on any more than once!</p>
           <i className="fas fa-window-close close" onClick={this.closeIntro}></i>
         </header>
         <div className="container">
@@ -84,6 +124,17 @@ class App extends Component {
           ))}
           </div>
         </div>
+        <footer className="App-footer">
+          <a href="/">
+            <div className="App-logo-title">
+              <img src={logo} alt="logo" className="App-logo" />
+              <h1 className="App-title">Leaf Hunter</h1>
+            </div>
+          </a>
+          <a href="https://github.com/jonathan-white">
+            Jon White &copy; 2018
+          </a>
+        </footer>
       </div>
     );
   }
