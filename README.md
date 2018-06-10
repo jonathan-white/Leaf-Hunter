@@ -1,1 +1,7 @@
-# This-is-not-a-Match-Game
+# Leaf-Hunter
+
+## Purpose
+
+## Author
+
+[Jon White](https://github.com/jonathan-white)
