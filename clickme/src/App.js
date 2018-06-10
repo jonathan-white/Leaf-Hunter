@@ -52,16 +52,25 @@ class App extends Component {
       .map(a => a[1])
   );
 
+  closeIntro = () => {
+    const intro = document.querySelector('.App-intro');
+    intro.style.maxHeight = '0';
+    intro.style.marginTop = '0';
+    intro.style.padding = '38px';
+    intro.style.opacity = '0';
+  }
+
   render() {
     return (
       <div className="App">
         <nav className="navbar App-header">
-          <h1 className="App-title">Click Me</h1>
-          <h4>Click an image below</h4>
+          <a href="/"><h1 className="App-title">Leaf Hunter</h1></a>
+          <h4>Click a leaf below</h4>
           <h4>Score: {this.state.score} | Highest Score: {this.state.highScore}</h4>
         </nav>
         <header className="jumbotron App-intro">
-          To get started, click on an image below.
+          <p>To get started, click a leaf below.</p>
+          <i className="fas fa-window-close close" onClick={this.closeIntro}></i>
         </header>
         <div className="container">
           <div className="wrapper row">

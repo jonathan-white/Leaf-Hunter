@@ -9,8 +9,16 @@
 
 .App-header {
   background-color: #222;
+  background-color: rgba(0, 194, 0, 1);
   padding: 20px;
   color: white;
+  box-shadow: 0 0 25px rgba(0,0,0,.7);
+  opacity: .8;
+}
+
+.App-header a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .App-title {
@@ -20,6 +28,8 @@
 .App-intro {
   font-size: large;
   margin-top: 76px;
+  opacity: .6;
+  position: relative;
 }
 
 @keyframes App-logo-spin {
