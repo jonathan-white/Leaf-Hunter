@@ -2,12 +2,15 @@
 
 ## Purpose
 
-Memory game using React.
+Memory game using React. Can you beat the timer?
 
 ## Getting Started
 
 Click on a leaf to get a point. Avoid clicking the same leaf twice!
-https://jonathan-white.github.io/Leaf-Hunter/
+
+Click [here](https://jonathan-white.github.io/Leaf-Hunter/) to start the game!
+
+[View Demo](https://drive.google.com/file/d/1qORjOCgnWYEJLaRYSw2ZOWsaYvXFntzQ/view)
 
 ## Author
 
