@@ -4,22 +4,15 @@ import Image from '../Image/Image';
 
 const Board = props => {
 
-	const guessedCorrectly = props.correctChoice;
-
-	let shake = "";
-	if(guessedCorrectly === false) {
-		shake = "shake";
-	}
-
 	return (
 		<main className="container">
-			<div className={`wrapper row ${shake}`}>
-				{props.shuffleImages(props.images).map(image => (
+			<div className={`wrapper row ${props.shake ? 'shake' : ''}`}>
+				{props.images.map(image => (
 					<Image 
+						key={image.id} 
 						id={image.id}
 						name={image.name}
 						source={image.src} 
-						key={image.id} 
 						handleClick={props.onClick}
 					/>
 				))}

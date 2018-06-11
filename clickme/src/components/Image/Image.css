@@ -13,7 +13,7 @@
 
 .leaf:hover {
 	transform: scale(1.05);
-	box-shadow: 10px 10px 10px rgba(0,0,0,.7), 0 0 20px rgba(0,255,0,1);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.7);
 }
 
 .leaf img {
