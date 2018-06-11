@@ -3,7 +3,6 @@ import './Board.css';
 import Image from '../Image/Image';
 
 const Board = props => {
-
 	return (
 		<main className="container">
 			<div className={`wrapper row ${props.shake ? 'shake' : ''}`}>
@@ -19,7 +18,6 @@ const Board = props => {
 			</div>
 		</main>
 	);
-
 };
 
 export default Board;

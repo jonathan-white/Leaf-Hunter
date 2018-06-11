@@ -90,7 +90,6 @@ class App extends Component {
 
   handleClick = i => {
     const clickedItems = this.state.clicked;
-    console.log('Current Timer: '+this.timerID);
 
     // If the player has already clicked the image reset the game
     if(clickedItems.includes(i)) {
