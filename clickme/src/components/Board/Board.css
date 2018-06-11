@@ -1,0 +1,20 @@
+.container {
+	padding-right: 150px;
+	padding-left: 150px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.shake {
+    animation: shake 500ms;
+}
+
+@keyframes shake {
+    0%, 25%, 50%, 75% { transform: translate(10px) }
+    12.5%, 37.5%, 62.5%, 87.5% { transform: translate(-10px) }
+}

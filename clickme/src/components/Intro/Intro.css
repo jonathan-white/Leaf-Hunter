@@ -1,0 +1,39 @@
+.App-intro {
+  position: relative;
+  font-size: large;
+  margin-top: 76px;
+  opacity: .6;
+  height: 155px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.App-intro-bg {
+  position: absolute;
+  background-image: url(../../leaves.jpg);
+  height: 100%;
+  width: 200%;
+  animation: App-intro-marquee infinite 50s linear;
+}
+
+.App-intro p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+@keyframes App-intro-marquee {
+  from { transform: translate(0,0); }
+  to { transform: translate(-50%,0); }
+}

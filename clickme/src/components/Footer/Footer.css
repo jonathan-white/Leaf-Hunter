@@ -1,0 +1,13 @@
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 194, 0, 1);
+}
+
+.App-footer a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 2rem;
+}

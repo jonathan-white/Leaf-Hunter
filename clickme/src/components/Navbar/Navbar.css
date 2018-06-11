@@ -1,0 +1,29 @@
+.App-header {
+	background-color: rgba(0, 194, 0, 1);
+	padding: 20px;
+	color: white;
+	box-shadow: 0 0 25px rgba(0,0,0,.7);
+	opacity: .8;
+}
+
+.App-header a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 2rem;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+.text-danger {
+	animation: text_blink 1.5s;
+}
+
+@keyframes text_blink {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}

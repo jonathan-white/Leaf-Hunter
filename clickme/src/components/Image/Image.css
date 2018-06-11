@@ -1,0 +1,27 @@
+.leaf {
+	position: relative;
+	padding: 2px;
+	margin: 5px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 5px rgba(0,0,0, .7);
+	margin: 5px 25px;
+	cursor: pointer;
+	min-width: 155px;
+	min-height: 155px;
+	border-radius: .25rem;
+}
+
+.leaf:hover {
+	transform: scale(1.05);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.7), 0 0 20px rgba(0,255,0,1);
+}
+
+.leaf img {
+	width: 150px;
+	height: 150px;
+	/*filter: grayscale(70%); */ /* Hard mode */
+}
+
+.leaf:hover img {
+	/*filter: grayscale(0);*/ /* Hard mode */
+}
