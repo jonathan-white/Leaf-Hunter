@@ -87,7 +87,8 @@ class App extends Component {
       });
     },3000);
 
-    const waitForNextGame = setTimeout(() => {
+    // Delay the start of the next game
+    setTimeout(() => {
       this.resetGame();
     }, 5000);
   };  
@@ -178,7 +179,8 @@ class App extends Component {
         statusClass: 'text-white',
       });
 
-      const waitForNextGame = setTimeout(() => {
+      // Delay the start of the next game
+      setTimeout(() => {
         this.resetGame();
       }, 4000);
 
