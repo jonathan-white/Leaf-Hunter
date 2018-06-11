@@ -11,7 +11,7 @@ const Navbar = props => {
 			</h4>
 			<div>
 				<h4>Score: {props.score} | Highest Score: {props.highScore}</h4>
-				<span>Time Remaining: {props.counter}</span>
+				<span className={props.timeBonus}>Time Remaining: {props.counter}</span>
 			</div>
 		</nav>
 	);

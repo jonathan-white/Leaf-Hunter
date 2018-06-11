@@ -22,7 +22,48 @@
 	animation: text_blink 1.5s;
 }
 
+.text-winner {
+	transition: all 500ms;
+	animation: rainbow 3s ease;
+}
+
+.navbar span {
+	position: relative;
+}
+
+.navbar span.increase-score {
+	animation: add_to_score 3s .625;
+}
+
 @keyframes text_blink {
 	from { opacity: 0 }
 	to { opacity: 1 }
+}
+
+@keyframes add_to_score {
+	0% {
+		top: 0;
+		left: 0;
+	}
+
+	30% {
+		top: 20px;
+		left: 20px;
+		font-size: 1rem;
+	}
+
+	80% {
+		top: -40px;
+		left: -50px;
+		font-size: 5px;
+	}
+}
+
+@keyframes rainbow {
+	0%{color: red;}
+	30%{color: blue;}
+	40%{color: yellow;}
+	50%{color: green;}
+	60%{color: purple;}
+	67%{color: white;}
 }

@@ -34,7 +34,8 @@ class App extends Component {
       counter: 60,
       shake: 0,
       status: 'Click a leaf below',
-      statusClass: 'text-white'
+      statusClass: 'text-white',
+      timeBonus: ''
     };
   }
 
@@ -53,11 +54,11 @@ class App extends Component {
       images: this.shuffleImages(prevState.images),
       clicked: [],
       score: 0,
-      highScore: 0,
       correctChoice: null,
       counter: 60,
-      status: "Time's up!",
-      statusClass: 'text-white'
+      status: "Click a leaf below",
+      statusClass: 'text-white',
+      timeBonus: ''
     }));
 
     this.startCountdown();
@@ -65,8 +66,30 @@ class App extends Component {
 
   winGame = () => {
     // Display celebration once the game has been won!
-    this.setState({status: 'You Win!!!'});
+    this.setState({
+      status: 'You Win!!!',
+      statusClass: 'text-winner',
+      timeBonus: 'increase-score',
+    });
     this.stopCountdown();
+
+    setTimeout(() => {
+      this.setState((prevState) => {
+        if((prevState.score * prevState.counter) >= prevState.highScore)
+          return ({
+              score: prevState.score * prevState.counter,
+              highScore: prevState.score * prevState.counter
+            })
+        else
+          return ({
+              score: prevState.score * prevState.counter
+            })
+      });
+    },3000);
+
+    const waitForNextGame = setTimeout(() => {
+      this.resetGame();
+    }, 5000);
   };  
 
   correctGuess = () => {
@@ -149,8 +172,16 @@ class App extends Component {
 
     if(this.state.counter === 0) {
       clearInterval(this.timerID);
-      this.setState({shake: 1});
-      this.resetGame();
+      this.setState({
+        shake: 1,
+        status: "Time's up!",
+        statusClass: 'text-white',
+      });
+
+      const waitForNextGame = setTimeout(() => {
+        this.resetGame();
+      }, 4000);
+
       return;
     }
   }
@@ -178,6 +209,7 @@ class App extends Component {
           score={this.state.score} 
           highScore={this.state.highScore} 
           counter={this.state.counter}
+          timeBonus={this.state.timeBonus}
         />
         <Intro />
         <Board 
