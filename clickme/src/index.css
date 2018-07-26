@@ -7,3 +7,20 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+@media screen and (max-width: 768px){
+	body {
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (max-width: 576px){
+  body {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

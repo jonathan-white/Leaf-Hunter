@@ -14,4 +14,4 @@ Click [here](https://jonathan-white.github.io/Leaf-Hunter/) to start the game!
 
 ## Author
 
-[Jon White](https://github.com/jonathan-white)
+[Jon White](http://www.jwhite.co)

@@ -19,8 +19,18 @@
     12.5%, 37.5%, 62.5%, 87.5% { transform: translate(-10px) }
 }
 
+@media screen and (max-width: 768px){
+	.container {
+		padding: 0 10px;
+		max-width: 80%;
+		margin: 35px auto;
+	}
+}
+
 @media screen and (max-width: 576px){
 	.container {
 		padding: 0 30px;
+		max-width: 540px;
+		margin: 0 auto;
 	}
 }
