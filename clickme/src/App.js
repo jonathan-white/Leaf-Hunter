@@ -149,7 +149,7 @@ class App extends Component {
   };
 
   // Shuffle image array
-  shuffleImages = arr => (
+  shuffleImages = (arr) => (
     arr
       .map(a => [Math.random(), a])
       .sort((a, b) => a[0] - b[0])
