@@ -7,9 +7,7 @@ const Navbar = (props) => {
 		<nav className="navbar App-header">
 			<div className="navbar-main">
 				<Brand />
-				<h4 className={`status ${props.statusClass}`}>
-					{props.status}
-				</h4>
+				<h4 className={`status ${props.statusClass}`}>{props.status}</h4>
 				<div>
 					<div className="score">
 						<span className="score-round">Score: {props.score}</span>

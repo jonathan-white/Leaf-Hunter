@@ -41,7 +41,7 @@
 	animation: add_to_score 3s .625;
 }
 
-.score {
+.navbar .score {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.2;
@@ -103,7 +103,7 @@
 }
 
 @media screen and (max-width: 576px) {
-	.score {
+	.navbar .score {
 		display: flex;
 		-webkit-flex-flow: column;
 		-ms-flex-flow: column;
@@ -112,16 +112,22 @@
 		text-align: right;
 	}
 
-	.score-divider {
+	.navbar .score-divider {
 		display: none;
 	}
 
-	.countdown-a {
+	.navbar .countdown-a {
 		display: none;
 	}
 
-	.countdown-b {
+	.navbar .countdown-b {
 		display: block;
 		width: 100%;
+	}
+}
+
+@media screen and (max-height: 300px){
+	.navbar {
+		display: none;
 	}
 }

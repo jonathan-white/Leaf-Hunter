@@ -218,8 +218,17 @@ class App extends Component {
           images={this.state.images}
           onClick={this.handleClick}
           shake={this.state.shake}
+          score={this.state.score}
+          highScore={this.state.highScore}
         />
-        <Footer />
+        <Footer
+          counter={this.state.counter}
+          timeBonus={this.state.timeBonus}
+        />
+        <div className="score">
+  				<div className="score-round">Score: {this.state.score}</div>
+  				<div className="score-highest">High: {this.state.highScore}</div>
+  			</div>
       </div>
     );
   }

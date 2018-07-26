@@ -4,12 +4,17 @@
   padding: 20px;
   margin-top: 20px;
   background-color: rgba(0, 194, 0, 1);
+  color: #fff;
 }
 
 .App-footer a {
   color: #fff;
   text-decoration: none;
   line-height: 2rem;
+}
+
+.footer-countdown {
+  display: none;
 }
 
 @media screen and (max-width: 768px){
@@ -35,5 +40,11 @@
 
   .App-footer .footer-link {
     width: 100%;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .footer-countdown {
+    display: flex;
   }
 }

@@ -2,6 +2,7 @@
 	padding-right: 150px;
 	padding-left: 150px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .wrapper {
@@ -27,10 +28,19 @@
 	}
 }
 
+
 @media screen and (max-width: 576px){
 	.container {
 		padding: 0 30px;
 		max-width: 540px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-height: 300px){
+	.container {
+		padding: 0 10px;
+		max-width: 90%;
 		margin: 0 auto;
 	}
 }
