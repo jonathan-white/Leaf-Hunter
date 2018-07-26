@@ -1,14 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import Brand from '../Brand/Brand';
+import Brand from '../Brand';
 
-const Footer = props => {
+const Footer = (props) => {
 	return (
 		<footer className="App-footer">
 			<Brand />
-			<a href="https://github.com/jonathan-white">
-			  Jon White &copy; 2018
-			</a>
+			<a href="http://www.jwhite.co" className="footer-link">Jonathan White &copy; 2018</a>
 		</footer>
 	);
 };

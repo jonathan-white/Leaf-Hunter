@@ -18,6 +18,12 @@
 	z-index: 1;
 }
 
+.navbar-main {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
 .text-danger {
 	animation: text_blink 1.5s;
 }
@@ -33,6 +39,13 @@
 
 .navbar span.increase-score {
 	animation: add_to_score 3s .625;
+}
+
+.score {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: .5rem;
 }
 
 @keyframes text_blink {
@@ -66,4 +79,49 @@
 	50%{color: green;}
 	60%{color: purple;}
 	67%{color: white;}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	.status {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 577px) {
+	.countdown-a {
+		display: block;
+	}
+
+	.countdown-b {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.score {
+		display: flex;
+		-webkit-flex-flow: column;
+		-ms-flex-flow: column;
+		flex-flow: column;
+		font-size: .75rem;
+		text-align: right;
+	}
+
+	.score-divider {
+		display: none;
+	}
+
+	.countdown-a {
+		display: none;
+	}
+
+	.countdown-b {
+		display: block;
+		width: 100%;
+	}
 }

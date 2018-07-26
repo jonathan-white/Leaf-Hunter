@@ -12,7 +12,7 @@ class Intro extends Component {
 
 	render(){
 		return(
-			<header className="App-intro">
+			<header className="App-intro d-none d-md-block">
 				<div className="App-intro-bg"></div>
 				<p>Click on a leaf to earn points, but don't click on any more than once!</p>
 				<i className="fas fa-window-close close" onClick={this.closeIntro}></i>

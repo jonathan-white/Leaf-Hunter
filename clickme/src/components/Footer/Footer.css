@@ -11,3 +11,20 @@
   text-decoration: none;
   line-height: 2rem;
 }
+
+@media screen and (max-width: 576px){
+	.App-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .App-footer .brand-link {
+    display: none;
+  }
+
+  .App-footer .footer-link {
+    width: 100%;
+  }
+}

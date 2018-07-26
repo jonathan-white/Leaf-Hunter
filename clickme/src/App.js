@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Intro from './components/Intro/Intro';
-import Board from './components/Board/Board';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import Board from './components/Board';
+import Footer from './components/Footer';
 import images from './images.json';
 
 const goodResponse = [
@@ -91,7 +91,7 @@ class App extends Component {
     setTimeout(() => {
       this.resetGame();
     }, 5000);
-  };  
+  };
 
   correctGuess = () => {
     this.setState({
@@ -132,7 +132,7 @@ class App extends Component {
       if (this.state.score >= this.state.highScore) {
         this.setState((prevState) => ({
           score: prevState.score + 1,
-          highScore: prevState.highScore + 1 
+          highScore: prevState.highScore + 1
         }));
       } else {
         this.setState((prevState) => ({
@@ -142,7 +142,7 @@ class App extends Component {
     };
 
     // record the index of the clicked image and reshuffle images
-    this.setState((prevState) => ({ 
+    this.setState((prevState) => ({
       clicked: [...clickedItems, i],
       images: this.shuffleImages(prevState.images)
     }));
@@ -205,17 +205,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar 
+        <Navbar
           status={this.state.status}
           statusClass={this.state.statusClass}
-          score={this.state.score} 
-          highScore={this.state.highScore} 
+          score={this.state.score}
+          highScore={this.state.highScore}
           counter={this.state.counter}
           timeBonus={this.state.timeBonus}
         />
         <Intro />
-        <Board 
-          images={this.state.images} 
+        <Board
+          images={this.state.images}
           onClick={this.handleClick}
           shake={this.state.shake}
         />

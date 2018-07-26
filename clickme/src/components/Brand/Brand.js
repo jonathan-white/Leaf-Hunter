@@ -2,9 +2,9 @@ import React from 'react';
 import './Brand.css';
 import logo from '../../Leaf_icon_15.svg';
 
-const Brand = props => {
+const Brand = (props) => {
 	return(
-		<a href="/Leaf-Hunter/">
+		<a href="/Leaf-Hunter/" className="brand-link">
 			<div className="App-logo-title">
 				<img src={logo} alt="logo" className="App-logo" />
 				<h1 className="App-title">Leaf Hunter</h1>
