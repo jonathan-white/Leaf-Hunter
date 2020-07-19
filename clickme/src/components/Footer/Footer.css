@@ -4,6 +4,9 @@
   padding: 20px;
   margin-top: 20px;
   background-color: rgba(0, 194, 0, 1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   color: #fff;
 }
 
