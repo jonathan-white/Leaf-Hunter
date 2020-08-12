@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Leaf-Hunter/static/css/main.2f65b8ec.chunk.css",
+    "main.js": "/Leaf-Hunter/static/js/main.3836d536.chunk.js",
+    "main.js.map": "/Leaf-Hunter/static/js/main.3836d536.chunk.js.map",
+    "runtime-main.js": "/Leaf-Hunter/static/js/runtime-main.90f6b773.js",
+    "runtime-main.js.map": "/Leaf-Hunter/static/js/runtime-main.90f6b773.js.map",
+    "static/js/2.c9c041ce.chunk.js": "/Leaf-Hunter/static/js/2.c9c041ce.chunk.js",
+    "static/js/2.c9c041ce.chunk.js.map": "/Leaf-Hunter/static/js/2.c9c041ce.chunk.js.map",
+    "index.html": "/Leaf-Hunter/index.html",
+    "precache-manifest.1b42833c84bc6db716376aea6784b5f9.js": "/Leaf-Hunter/precache-manifest.1b42833c84bc6db716376aea6784b5f9.js",
+    "service-worker.js": "/Leaf-Hunter/service-worker.js",
+    "static/css/main.2f65b8ec.chunk.css.map": "/Leaf-Hunter/static/css/main.2f65b8ec.chunk.css.map",
+    "static/js/2.c9c041ce.chunk.js.LICENSE.txt": "/Leaf-Hunter/static/js/2.c9c041ce.chunk.js.LICENSE.txt",
+    "static/media/Leaf_icon_15.svg": "/Leaf-Hunter/static/media/Leaf_icon_15.859f4fc4.svg",
+    "static/media/index.css": "/Leaf-Hunter/static/media/Leaves-Background-Wallpaper.f52d402c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90f6b773.js",
+    "static/js/2.c9c041ce.chunk.js",
+    "static/css/main.2f65b8ec.chunk.css",
+    "static/js/main.3836d536.chunk.js"
+  ]
+}
