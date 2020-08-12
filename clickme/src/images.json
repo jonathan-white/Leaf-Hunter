@@ -2,73 +2,73 @@
 	{
 		"id": 1,
 		"name": "Maple",
-		"src": "%PUBLIC_URL%/assets/images/maple.jpg",
+		"src": "/assets/images/maple.jpg",
 		"clicked": false
 	},
 	{
 		"id": 2,
 		"name": "Monarch Birch",
-		"src": "%PUBLIC_URL%/assets/images/monarch-birch-leaf.jpg",
+		"src": "/assets/images/monarch-birch-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 3,
 		"name": "Ohio Buckeye",
-		"src": "%PUBLIC_URL%/assets/images/ohio-buckeye-leaf.jpg",
+		"src": "/assets/images/ohio-buckeye-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 4,
 		"name": "Apple Tree",
-		"src": "%PUBLIC_URL%/assets/images/apple-tree-leaf1.jpg",
+		"src": "/assets/images/apple-tree-leaf1.jpg",
 		"clicked": false
 	},
 	{
 		"id": 5,
 		"name": "Common Ash",
-		"src": "%PUBLIC_URL%/assets/images/common-ash-leaf1.jpg",
+		"src": "/assets/images/common-ash-leaf1.jpg",
 		"clicked": false
 	},
 	{
 		"id": 6,
 		"name": "May Day Tree",
-		"src": "%PUBLIC_URL%/assets/images/may-day-tree-leaf.jpg",
+		"src": "/assets/images/may-day-tree-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 7,
 		"name": "Thorn Elm",
-		"src": "%PUBLIC_URL%/assets/images/thorn-elm-leaf.jpg",
+		"src": "/assets/images/thorn-elm-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 8,
 		"name": "White Oak",
-		"src": "%PUBLIC_URL%/assets/images/white-oak-leaf.jpg",
+		"src": "/assets/images/white-oak-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 9,
 		"name": "American Mountain Ash",
-		"src": "%PUBLIC_URL%/assets/images/american-mountain-ash-leaf.jpg",
+		"src": "/assets/images/american-mountain-ash-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 10,
 		"name": "Red Thorn",
-		"src": "%PUBLIC_URL%/assets/images/red-thorn-leaf.jpg",
+		"src": "/assets/images/red-thorn-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 11,
 		"name": "Henry's Lime",
-		"src": "%PUBLIC_URL%/assets/images/henrys-lime-leaf.jpg",
+		"src": "/assets/images/henrys-lime-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 12,
 		"name": "London Plane",
-		"src": "%PUBLIC_URL%/assets/images/london-plane-tree-leaf.jpg",
+		"src": "/assets/images/london-plane-tree-leaf.jpg",
 		"clicked": false
 	}
 ]
