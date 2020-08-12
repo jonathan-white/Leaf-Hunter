@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d4aea49021ef12789d4ca4c6985909c",
+    "revision": "ecc9cb584544fbaca3eb2f349bf2265a",
     "url": "/Leaf-Hunter/index.html"
   },
   {
-    "revision": "0adf0bc3c12bad78e813",
+    "revision": "a2e0d8c19f905763747f",
     "url": "/Leaf-Hunter/static/css/main.2f65b8ec.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Leaf-Hunter/static/js/2.c9c041ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0adf0bc3c12bad78e813",
-    "url": "/Leaf-Hunter/static/js/main.5f6b6c07.chunk.js"
+    "revision": "a2e0d8c19f905763747f",
+    "url": "/Leaf-Hunter/static/js/main.3836d536.chunk.js"
   },
   {
     "revision": "225a2ab556c52752ac67",
