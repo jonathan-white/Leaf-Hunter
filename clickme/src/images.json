@@ -2,73 +2,73 @@
 	{
 		"id": 1,
 		"name": "Maple",
-		"src": "/Leaf-Hunter/assets/images/maple.jpg",
+		"src": "%PUBLIC_URL%/assets/images/maple.jpg",
 		"clicked": false
 	},
 	{
 		"id": 2,
 		"name": "Monarch Birch",
-		"src": "/Leaf-Hunter/assets/images/monarch-birch-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/monarch-birch-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 3,
 		"name": "Ohio Buckeye",
-		"src": "/Leaf-Hunter/assets/images/ohio-buckeye-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/ohio-buckeye-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 4,
 		"name": "Apple Tree",
-		"src": "/Leaf-Hunter/assets/images/apple-tree-leaf1.jpg",
+		"src": "%PUBLIC_URL%/assets/images/apple-tree-leaf1.jpg",
 		"clicked": false
 	},
 	{
 		"id": 5,
 		"name": "Common Ash",
-		"src": "/Leaf-Hunter/assets/images/common-ash-leaf1.jpg",
+		"src": "%PUBLIC_URL%/assets/images/common-ash-leaf1.jpg",
 		"clicked": false
 	},
 	{
 		"id": 6,
 		"name": "May Day Tree",
-		"src": "/Leaf-Hunter/assets/images/may-day-tree-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/may-day-tree-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 7,
 		"name": "Thorn Elm",
-		"src": "/Leaf-Hunter/assets/images/thorn-elm-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/thorn-elm-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 8,
 		"name": "White Oak",
-		"src": "/Leaf-Hunter/assets/images/white-oak-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/white-oak-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 9,
 		"name": "American Mountain Ash",
-		"src": "/Leaf-Hunter/assets/images/american-mountain-ash-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/american-mountain-ash-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 10,
 		"name": "Red Thorn",
-		"src": "/Leaf-Hunter/assets/images/red-thorn-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/red-thorn-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 11,
 		"name": "Henry's Lime",
-		"src": "/Leaf-Hunter/assets/images/henrys-lime-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/henrys-lime-leaf.jpg",
 		"clicked": false
 	},
 	{
 		"id": 12,
 		"name": "London Plane",
-		"src": "/Leaf-Hunter/assets/images/london-plane-tree-leaf.jpg",
+		"src": "%PUBLIC_URL%/assets/images/london-plane-tree-leaf.jpg",
 		"clicked": false
 	}
 ]
